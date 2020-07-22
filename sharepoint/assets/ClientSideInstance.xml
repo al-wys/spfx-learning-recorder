@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="LearningRecorder"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="25a85e49-fe69-4c4a-a7d9-7351482c3660"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

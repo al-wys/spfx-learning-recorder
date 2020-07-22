@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": false,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://contoso.sharepoint.cn/sites/Learning/SitePages/Home.aspx",
+      "customActions": {
+        "25a85e49-fe69-4c4a-a7d9-7351482c3660": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "recordListTitle": "学习记录",
+            "verificationPropertyName": "OData__x7cfb__x5217_"
+          }
+        }
+      }
+    },
+    "learningRecorder": {
+      "pageUrl": "https://contoso.sharepoint.cn/sites/Learning/SitePages/Home.aspx",
+      "customActions": {
+        "25a85e49-fe69-4c4a-a7d9-7351482c3660": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "recordListTitle": "学习记录",
+            "verificationPropertyName": "OData__x7cfb__x5217_"
+          }
+        }
+      }
+    }
+  }
+}

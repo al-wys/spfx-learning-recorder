@@ -1,0 +1,44 @@
+{
+  /**
+   * Install Chrome Debugger Extension for Visual Studio Code to debug your components with the
+   * Chrome browser: https://aka.ms/spfx-debugger-extensions
+   */
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "Local workbench",
+      "type": "edge",
+      "request": "launch",
+      "url": "https://localhost:4321/temp/workbench.html",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=2015"
+      ]
+    },
+    {
+      "name": "Hosted workbench",
+      "type": "edge",
+      "request": "launch",
+      // "userDataDir": false,
+      "url": "https://yiswcontoso.sharepoint.cn/sites/Learning/SitePages/Windows-Hello.aspx?debugManifestsFile=http%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fmanifests.js&loadSPFX=true&customActions=%7B%2225a85e49-fe69-4c4a-a7d9-7351482c3660%22%3A%7B%22location%22%3A%22ClientSideExtension.ApplicationCustomizer%22%2C%22properties%22%3A%7B%22recordListTitle%22%3A%22%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%22%2C%22verificationPropertyName%22%3A%22OData__x7cfb__x5217_%22%7D%7D%7D",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=2015",
+        "-incognito"
+      ]
+    }
+  ]
+}
